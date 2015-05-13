@@ -10,6 +10,7 @@ static ERL_NIF_TERM
 bitmap_filter(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv[])
 {
     size_t seen_forklift_id[3000] = { 0 };
+
     if(argc != 1)
     {
         return enif_make_badarg(env);
@@ -56,7 +57,7 @@ bitmap_filter(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv[])
                 return enif_make_badarg(env);
             }
 
-            if(key > 3000)
+            if(key >= 3000)
             {
                 return enif_make_badarg(env);
             }
