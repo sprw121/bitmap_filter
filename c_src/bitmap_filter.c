@@ -27,7 +27,6 @@ bitmap_filter(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv[])
     ERL_NIF_TERM inner_list;
 
     ERL_NIF_TERM inner_head;
-    ERL_NIF_TERM outer_tail;
 
     const ERL_NIF_TERM* tuple_elems;
     int num_elems;

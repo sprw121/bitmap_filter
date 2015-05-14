@@ -1,0 +1,15 @@
+{application, bitmap_filter,
+    [
+        {description, "A NIF ETS elaboration jam."},
+        {vsn, "0.0.1"},
+        {modules, []},
+        {registered, []},
+        {applications,
+                        [
+                        kernel,
+                        stdlib
+                        ]
+        },
+        {env, []}
+    ]
+}.
