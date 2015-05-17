@@ -74,7 +74,7 @@ bitmap_filter(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv[])
 
 static ErlNifFunc nif_funcs[] =
 {
-    {"filter", 1, bitmap_filter}
+    {"filter", 1, bitmap_filter, 0}
 };
 
 ERL_NIF_INIT(bitmap_filter, nif_funcs, NULL, NULL, NULL, NULL)
