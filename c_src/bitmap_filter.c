@@ -1,4 +1,4 @@
-#include "/usr/lib/erlang/usr/include/erl_nif.h"
+#include <erl_nif.h>
 
 /*
     This function expects a list of list of tuples of type {int, _}.
